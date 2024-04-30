@@ -72,7 +72,7 @@ bool Gamemode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			if (!InitListen(UWorld::GetWorld()->NetDriver, UWorld::GetWorld(), URL, false, Err))
 			{
-				LOG("Failed to InitListen (basically just end your life lil bro)");
+				LOG("Failed to InitListen");
 			}
 
 			SetWorld(UWorld::GetWorld()->NetDriver, UWorld::GetWorld());
